@@ -20,12 +20,13 @@ class EvenIndex:
 
     def indexcheck(self):
         self.word=input("Enter a string to be filtered: ")
+        a = len(self.word)
 
-        for i in self.word:
-            if self.word.index(i)%2==0:
-                self.output+=i
+        for i in range(0,a):
+            if i%2==0:
+                self.output+=self.word[i]
 
-        return self.output
+        # return self.output
     
 
     def print_output(self):
